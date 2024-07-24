@@ -1,0 +1,69 @@
+.auth-container {
+  background: url(https://img-cdn.inc.com/image/upload/w_1280,ar_16:9,c_fill,g_auto,q_auto:best/images/panoramic/GettyImages-900301626_437925_t2i3bm.webp);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .auth-forms {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    .register-form .login-form {
+      padding: 25px;
+    }
+
+    p {
+      cursor: pointer;
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .forms-auth {
+      display: flex;
+    }
+
+    &.login-active {
+      .register-form {
+        animation: identifier 2s;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(-25%);
+        z-index: -1;
+      }
+    }
+
+    &.register-active {
+      .login-form {
+        animation: identifier 2s;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(25%);
+        z-index: -1;
+      }
+    }
+  }
+
+  .panels-auth {
+    border-radius: 10px;
+    position: absolute;
+    width: 450px;
+    height: 100%;
+    background-color: aqua;
+    transition: transform 0.5s ease-in-out;
+
+    &.login-active {
+      transform: translateX(100%);
+    }
+
+    &.register-active {
+      transform: translateX(0%);
+    }
+  }
+}

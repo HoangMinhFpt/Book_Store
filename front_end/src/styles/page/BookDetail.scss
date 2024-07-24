@@ -1,0 +1,26 @@
+@import "../common.scss";
+@import "../base";
+.book-detail-page {
+  .book-detail-content {
+    height: 500px;
+    display: flex;
+    font-size: $base-size;
+
+    .img-book {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .detail-book {
+      width: 65%;
+      height: 50%;
+
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../common.scss";
+.pagination-container {
+  display: flex;
+  font-size: $base-size;
+  justify-content: center;
+  align-items: center;
+
+  .limit-item {
+    select {
+      font-size: $base-size;
+    }
+  }
+
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    &:disabled {
+      background-color: #f0f0f0;
+      cursor: not-allowed;
+    }
+    &.active {
+      background-color: #007bff;
+      color: white;
+    }
+  }
+}

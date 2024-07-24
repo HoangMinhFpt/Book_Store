@@ -1,0 +1,27 @@
+@import "../common.scss";
+@import "../base";
+.modal-container-create {
+  font-weight: bold;
+  .image-review,
+  .image-selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  Form {
+    display: flex;
+    justify-content: space-around;
+
+    .content-left,
+    .content-right {
+      font-size: $base-size;
+
+      input {
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

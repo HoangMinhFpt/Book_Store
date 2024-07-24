@@ -1,0 +1,21 @@
+.view-more-container {
+  width: 10vw;
+
+  .view-more-content {
+    display: flex;
+    position: relative;
+    left: 70vw;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px;
+    align-items: center;
+    transition-duration: 0.5s;
+    transform: translateX(0);
+
+    &:hover {
+      color: red;
+      transition-duration: 0.5s;
+      transform: translateX(10px);
+    }
+  }
+}

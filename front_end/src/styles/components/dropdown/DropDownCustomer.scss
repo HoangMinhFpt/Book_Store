@@ -1,0 +1,51 @@
+@import "../../common.scss";
+@import "../../base";
+
+.dropdown-customer-container {
+  position: relative;
+  display: inline-block;
+  .menu-button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: auto;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: $common-white;
+    min-width: 160px;
+    box-shadow: $box-shadow;
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px 0;
+    &.active {
+      display: block;
+    }
+    .dropdown-item {
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: $base-size;
+
+      &:hover {
+        background-color: $dropdown-hover-bg;
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+    }
+    .dropdown-divider {
+      border-top: 1px solid #e9ecef;
+      margin: 5px 0;
+    }
+  }
+}

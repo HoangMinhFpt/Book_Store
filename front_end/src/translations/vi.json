@@ -1,0 +1,78 @@
+{
+  "title": {
+    "book": "sách",
+    "author": "tác giả",
+    "genre": "thể loại",
+    "quantity": "số lượng",
+    "price": "giá",
+    "total": "tổng cộng",
+    "total_amount": "thành tiền",
+    "order": "đơn hàng",
+    "order_list": "danh sách đơn hàng",
+    "order_detail": "chi tiết đơn hàng",
+    "review": "đánh giá",
+    "cart": "giỏ hàng",
+    "our_product": "sản phẩm",
+    "view_more": "xem thêm",
+    "best_seller": "bán chạy",
+    "home": "trang chủ",
+    "account": "hồ sơ",
+    "phone": "điện thoại",
+    "email": "email",
+    "address": "địa chỉ",
+    "description": "giới thiệu",
+    "stocking": "còn hàng",
+    "product": "sản phẩm",
+    "published_date": "phát hành",
+    "your_review": "đánh giá của bạn",
+    "rating": "xếp hạng",
+    "comment": "đánh giá",
+    "subtotal": "tạm tính",
+    "ship_cost": "phí vận chuyển",
+    "discount": "giảm giá",
+    "username": "tên người dùng",
+    "fullname": "tên đầy đủ",
+    "your_profile": "Hồ sơ của bạn",
+    "current_password": "Mật khẩu cũ",
+    "new_password": "Mật khẩu mới",
+    "confirm _password": "Xác nhận mật khẩu mới"
+  },
+
+  "module": {
+    "our_product": "sản phẩm",
+    "best_seller": "bán chạy"
+  },
+
+  "user": {
+    "profile": "hồ sơ",
+    "wishlist": "yêu thích",
+    "logout": "đăng xuất"
+  },
+
+  "table": {
+    "title": "Tên",
+    "total": "tổng cộng",
+    "total_amount": "thành tiền",
+    "order_date": "ngày đặt"
+  },
+  "button": {
+    "buy_now": "mua",
+    "add_wishlist": "yêu thích",
+    "create": "tạo",
+    "cancel": "huỷ",
+    "edit": "chỉnh sửa",
+    "delete": "xoá",
+    "edit_review": "chỉnh sửa đánh giá",
+    "create_review": "đánh giá",
+    "check_out": "thanh toán",
+    "remove_cart": "xoá giỏ hàng",
+    "shopping": "tiếp tục mua sắm",
+    "post": "đăng",
+    "change_password": "đổi mật khẩu",
+    "update_profile": "chỉnh sửa hồ sơ"
+  },
+  "toast": {
+    "cannot_add_more": "Không thể thêm nhiều hơn, số lượng hàng đã đạt đến giới hạn!",
+    "cart_empty": "giỏ hàng trống"
+  }
+}

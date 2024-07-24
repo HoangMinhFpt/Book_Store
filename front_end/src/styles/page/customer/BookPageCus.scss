@@ -1,0 +1,18 @@
+@import "../../common.scss";
+@import "../../base";
+
+.card-placeholder,
+.card-grip,
+.card-list {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,170 @@
+@import "../common.scss";
+@import "../base";
+
+.signin-container {
+  width: 450px;
+
+  .title-signin {
+    color: $colormain;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $title-size;
+    font-weight: bold;
+  }
+
+  .text-content {
+    text-align: center;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 10px 5px;
+  }
+
+  .signin-input-content {
+    position: relative;
+    display: grid;
+    align-items: center;
+    width: 75%;
+    margin: 20px auto;
+
+    input {
+      width: 100%;
+      padding: 10px 5px 7px 15px;
+      font-size: 20px;
+      border-radius: 10px;
+      outline: none;
+      border: solid $colormain;
+
+      &:valid ~ span,
+      &:focus ~ span {
+        color: white;
+        background-color: $colormain;
+        transform: translateX(10px) translateY(-10px);
+        font-size: 15px;
+        padding: 0 15px;
+        border-radius: 5px;
+      }
+
+      &:focus {
+        border: solid $colormain;
+      }
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 10px 15px;
+      pointer-events: none;
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+  }
+
+  .text-signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    .link-signup {
+      margin-left: 2px;
+      text-transform: capitalize;
+      text-decoration: none;
+      // color: #22232b;
+    }
+  }
+
+  .toggle-signin {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 20px auto;
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 15px;
+      margin-right: 10px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .slider {
+          background-color: #22232b;
+
+          &::before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+        }
+
+        &:focus + .slider {
+          box-shadow: 0 0 1px #22232b;
+        }
+      }
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 0px;
+        bottom: -3px;
+        border: solid 2px gray;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      &.round {
+        border-radius: 20px;
+
+        &:before {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: $colormain;
+    width: 75%;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    border: none;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    margin-top: 35px;
+    text-transform: uppercase;
+
+    &:hover {
+      box-shadow: rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset,
+        rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
+      transition: all 0.5s;
+    }
+  }
+}

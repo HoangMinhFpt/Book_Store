@@ -1,0 +1,9 @@
+.star-rating {
+  display: inline - flex;
+  .star {
+    color: #6c757d !important;
+    &-active {
+      color: #ffc107 !important;
+    }
+  }
+}

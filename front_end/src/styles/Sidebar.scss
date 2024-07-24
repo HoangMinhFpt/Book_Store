@@ -1,0 +1,98 @@
+@import "./common.scss";
+
+.sidebar {
+  background: $colormain;
+  color: #feffff;
+  height: calc(100vh - 10px);
+  width: 300px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  margin: 5px 0 5px 5px;
+  position: sticky;
+  top: 5px;
+  display: grid;
+
+  .top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    flex-direction: column;
+
+    .title-logo {
+      font-weight: 700;
+      font-size: $title-size;
+    }
+  }
+
+  .link {
+    display: flex;
+    color: #feffff;
+    padding: 10px 15px;
+    gap: 20px;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin: 5px;
+    align-items: center;
+
+    .icon,
+    .link_text {
+      font-size: $title-size;
+    }
+  }
+
+  .list-content {
+    .link-content {
+      color: $common-white;
+      font-size: $base-size + 2px;
+      margin-left: 35px;
+
+      &.active {
+        background: lightskyblue;
+        color: $text-in-light;
+        border-radius: 7px;
+      }
+
+      &:hover {
+        background: lightskyblue;
+        color: $text-in-light;
+        border-radius: 7px;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .link:hover {
+    background: lightskyblue;
+    color: $text-in-light;
+    transition: all 0.5s;
+    border-radius: 7px;
+  }
+
+  .active {
+    background: lightskyblue;
+    color: $text-in-light;
+    border-radius: 7px;
+  }
+
+  .logout-btn {
+    margin: 10px;
+    text-align: center;
+    align-self: end;
+    &.col-footer {
+      border-top: 2px solid rgba(90, 96, 105, 0.4);
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: $colormain;
+      border: none;
+      color: $common-text-color;
+      border-radius: 5px;
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}

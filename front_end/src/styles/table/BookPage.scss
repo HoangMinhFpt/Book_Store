@@ -1,0 +1,86 @@
+@import "../common.scss";
+@import "../base";
+
+.book-page {
+  .book-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $base-size;
+    .create-book {
+      width: 20%;
+    }
+    .book-content-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+      width: 80%;
+
+      .book-search {
+        width: 40%;
+        input {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  .table-book-container {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .book-table {
+      width: 100%;
+      border-radius: 5px;
+
+      tbody {
+        border-radius: 10px;
+        td {
+          .card-img-top {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+          }
+          .link {
+            text-decoration: none;
+            color: #00e;
+          }
+        }
+      }
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: $base-size;
+      }
+
+      tr:first-child th {
+        text-align: center;
+      }
+
+      tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+        border: none;
+      }
+
+      tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+        border: none;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: $colormain;
+        color: white;
+      }
+    }
+  }
+}

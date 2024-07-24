@@ -1,0 +1,13 @@
+@import "../../_variables";
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  width: 10%;
+
+  .btn-theme {
+    border: none;
+    background-color: $colormain;
+    color: $common-white;
+  }
+}

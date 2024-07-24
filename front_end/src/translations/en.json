@@ -1,0 +1,75 @@
+{
+  "title": {
+    "book": "book",
+    "author": "author",
+    "genre": "genre",
+    "quantity": "quantity",
+    "price": "price",
+    "total": "total",
+    "total_amount": "total amount",
+    "order": "order",
+    "order_list": "order list",
+    "order_detail": "order detail",
+    "review": "review",
+    "cart": "cart",
+    "view_more": "view more",
+    "home": "home",
+    "account": "account",
+    "phone": "phone",
+    "email": "email",
+    "address": "address",
+    "description": "description",
+    "stocking": "stocking",
+    "product": "product",
+    "published_date": "published date",
+    "your_review": "your review",
+    "rating": "rating",
+    "comment": "comment",
+    "subtotal": "subtotal",
+    "ship_cost": "shipping cost",
+    "discount": "discount",
+    "username": "username",
+    "fullname": "fullname",
+    "your_profile": "your profile",
+    "current_password": "current password",
+    "new_password": "new password",
+    "confirm _password": "confirm new password"
+  },
+
+  "module": {
+    "our_product": "our product",
+    "best_seller": "best seller"
+  },
+
+  "user": {
+    "profile": "profile",
+    "wishlist": "wishlist",
+    "logout": "logout"
+  },
+  "table": {
+    "title": "title",
+    "total": "total",
+    "total_amount": "total amount",
+    "order_date": "order date"
+  },
+  "button": {
+    "buy_now": "buy now",
+    "add_wishlist": "add to wishlist",
+    "create": "create",
+    "cancel": "cancel",
+    "edit": "edit",
+    "delete": "delete",
+    "edit_review": "edit review",
+    "create_review": "create review",
+    "check_out": "check out",
+    "remove_cart": "remove cart",
+    "shopping": "countinue shopping",
+    "post": "post",
+    "change_password": "change password",
+    "update_profile": "edit profile"
+  },
+  "toast": {
+    "cannot_add_more": "Cannot add more, stock limit reached!",
+    "cart_empty": "Cart is empty"
+  }
+}

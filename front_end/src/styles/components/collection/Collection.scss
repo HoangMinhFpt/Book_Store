@@ -1,0 +1,30 @@
+.collection-container {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+
+  .collection-content {
+    position: relative;
+    margin: 10px 10px;
+
+    img {
+      height: 206px;
+      width: 307px;
+    }
+
+    .collection-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .collection-text {
+      display: inline-block;
+      width: 250px;
+      color: #ffde00;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.module-title-container {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5vh;
+  font-size: 25px;
+
+  .module-title-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 70px;
+    border: solid 3px $border;
+    border-radius: 20px;
+    color: $colormain; // background-color: $colormain;
+    .icon-star {
+      margin: 0 auto;
+    }
+  }
+}

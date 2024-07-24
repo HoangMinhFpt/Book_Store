@@ -1,0 +1,62 @@
+@import "../common.scss";
+@import "../base";
+
+.header-container {
+  display: flex;
+  text-align: center;
+  font-size: $title-size;
+  margin: 0 auto 10px auto;
+  padding: 20px 10%;
+  color: white;
+  background: $colormain;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+
+  .header-left-content {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-title {
+      font-weight: 500px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .header-center-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header-right-content {
+    width: 30%;
+    display: flex;
+
+    .header-one-content {
+      width: 75%;
+      display: flex;
+      grid: 10px;
+      justify-content: space-evenly;
+      align-items: center;
+      .btn-cart {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: none;
+        outline: none;
+        color: $common-white;
+      }
+    }
+
+    .header-two-content {
+      width: 25%;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: $base-size -5px;
+    }
+  }
+}

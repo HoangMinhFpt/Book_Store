@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.select-language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .select-language {
+    height: 75%;
+    font-size: $base-size;
+  }
+}

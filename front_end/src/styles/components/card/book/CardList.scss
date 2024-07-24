@@ -1,0 +1,73 @@
+@import "../../../common.scss";
+@import "../../../base";
+
+.card-container {
+  margin: 20px 0;
+  .card {
+    color: #6c6f7a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background-color: var(--second-background);
+
+    &:hover {
+      transform: scale(1.02, 1.02);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    :link {
+      .left-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        .img-fluid {
+          width: 100%;
+          height: 200px;
+          object-fit: contain;
+        }
+      }
+
+      .col-footer {
+        margin: 15px 0;
+        border-right: 1px solid rgba(90, 96, 105, 0.4);
+      }
+
+      .center-content {
+        .card-body {
+          .text-biography {
+            overflow: hidden;
+            width: 350px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+  }
+  .right-content {
+    padding: 20px;
+
+    .fw-bold {
+      color: $text-in-light;
+    }
+
+    .btn-group {
+      .btn-cart {
+        border: $colormain solid 3px;
+        // color: $c;
+        &:hover {
+          background-color: $colormain;
+          color: white;
+        }
+      }
+      .btn-wishlist {
+        border: #ff0000 solid 3px;
+        background-color: #ff0000;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

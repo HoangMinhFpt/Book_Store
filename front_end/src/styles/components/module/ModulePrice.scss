@@ -1,0 +1,90 @@
+@import "../../common.scss";
+@import "../../base";
+
+.module-price-container {
+  font-size: $base-size;
+  padding: 10px;
+  .module-price-content {
+    border-radius: 20px;
+    .count-buy-item {
+      display: flex;
+      gap: 5%;
+
+      .__react_component_tooltip {
+        font-size: 1rem;
+        color: #fff;
+        background-color: red;
+      }
+
+      .counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: #fff;
+        width: 25%;
+
+        &__button {
+          background: none;
+          border: none;
+          margin: 0 5px;
+          cursor: pointer;
+          outline: none;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
+
+        &__value {
+          // max-width: 20%;
+          text-align: center;
+          .input-count {
+            text-align: center;
+            // border: none;
+            width: 75%;
+          }
+        }
+      }
+      transition: transform 0.3s ease;
+
+      .btn-buy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: $colormain;
+        color: $common-white;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          transform: translateY(1px) translateX(-1px);
+          box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .btn-wishlist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 20px;
+        padding: 0 20px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: $common-red;
+        color: $common-white;
+        &:hover {
+          transform: translateY(1px) translateX(-1px);
+          box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}

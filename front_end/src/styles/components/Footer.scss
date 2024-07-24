@@ -1,0 +1,152 @@
+.footer-container {
+  background: url(https://aero-theme.myshopify.com/cdn/shop/files/bkg_footer_c0f71867-38e3-492b-995f-7d0269b97db1.jpg?v=1625767911)
+    transparent;
+  color: white;
+  margin-top: 20px;
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-top {
+    padding: 100px 0 30px 0;
+
+    .footer-content {
+      line-height: 25px;
+      font-weight: 400;
+
+      .text-logo {
+        font-size: 30px;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 35px;
+      }
+
+      .text-description {
+        color: #5a6069;
+        letter-spacing: 0.25px;
+      }
+
+      .footer-contact {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 25px;
+        letter-spacing: 0.25px;
+        margin-top: 40px;
+
+        li {
+          display: flex;
+          padding: 5px 0;
+
+          .footer-contact-item {
+            display: flex;
+
+            p {
+              text-transform: capitalize;
+
+              &:last-child {
+                text-transform: none;
+              }
+            }
+          }
+        }
+
+        .icon-contact {
+          font-size: 15px;
+          color: red;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .col-footer {
+      margin-bottom: 30px;
+      border-right: 1px solid rgba(90, 96, 105, 0.4);
+    }
+
+    .footer-content-menu {
+      text-transform: capitalize;
+
+      .text-link {
+        color: #5a6069;
+        display: grid;
+        padding: 10px 5px;
+        transition-duration: 0.5s;
+        transform: translateX(0);
+
+        &:hover {
+          color: red;
+          transition-duration: 0.5s;
+          transform: translateX(10px);
+        }
+      }
+    }
+
+    .footer-title-menu {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      margin-top: 7px;
+    }
+  }
+
+  .footer-bottom {
+    .container-inner {
+      padding: 35px 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      border-top: 1px solid rgba(131, 136, 150, 0.3);
+      text-align: center;
+
+      .footer-copyright {
+        float: left;
+        color: #838896;
+        font-size: 13px;
+        background: none;
+        text-transform: capitalize;
+        font-weight: 400;
+        text-align: left;
+        padding: 13px 0;
+      }
+
+      .link-follow {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 60px;
+
+        ul {
+          list-style: none;
+          padding: 10px 0;
+          margin: 0;
+        }
+
+        li {
+          float: left;
+          margin: 0px 10px;
+
+          .icon-link {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            color: #838896;
+            font-size: 20px;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            text-align: center;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}

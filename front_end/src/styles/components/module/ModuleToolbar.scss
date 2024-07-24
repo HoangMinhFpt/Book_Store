@@ -1,0 +1,82 @@
+@import "../../common.scss";
+@import "../../base";
+
+.module-toolbar-container {
+  display: flex;
+  border: solid grey 2px;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+  button {
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    opacity: 0.25;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .module-toolbar-content-left {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+
+    .text-paging {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .form-select {
+    width: 60%;
+    border-radius: 10px;
+    text-transform: capitalize;
+  }
+  .module-toolbar-content-center {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: capitalize;
+    .form-select {
+      width: 30%;
+    }
+  }
+  .module-toolbar-content-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    .btn-group {
+      display: flex;
+      justify-content: space-evenly;
+      width: 55%;
+      button {
+        background-color: var(--primary-background);
+        &:hover {
+          color: $colormain;
+        }
+      }
+      .btn-grip {
+        &.active {
+          color: $colormain;
+        }
+      }
+      .btn-list {
+        &.active {
+          color: $colormain;
+        }
+      }
+    }
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 1;
+    }
+  }
+}

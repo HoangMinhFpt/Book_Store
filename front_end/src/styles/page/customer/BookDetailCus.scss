@@ -1,0 +1,12 @@
+@import "../../common.scss";
+@import "../../base";
+
+.col-md-12 {
+  .left-content {
+    border: solid $colorbackground;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0 10px 5px 0;
+  }
+}

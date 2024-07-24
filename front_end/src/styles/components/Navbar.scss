@@ -1,0 +1,43 @@
+@import "../common.scss";
+@import "../base";
+
+.navbar-container {
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: $common-white;
+  .icon-menu {
+    margin-left: 10px;
+  }
+
+  ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $common-white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    li {
+      margin: 5px;
+      padding-left: 10px;
+      &:hover {
+        background-color: $colormain;
+        color: $common-white;
+      }
+
+      &.active {
+        color: $common-white;
+        background-color: $colormain;
+      }
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      letter-spacing: 0.15rem;
+    }
+  }
+}

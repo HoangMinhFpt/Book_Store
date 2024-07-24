@@ -1,0 +1,22 @@
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      border-radius: 20px;
+      height: 80%;
+
+      img {
+        height: 80%;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      &::marker {
+        display: none;
+        color: transparent;
+      }
+    }
+  }
+}
